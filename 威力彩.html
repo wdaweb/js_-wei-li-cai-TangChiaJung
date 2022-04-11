@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        
+        let lotto = () => {
+            
+            let a= new Array()
+
+            // for (let i = 0; i <= 5; i++) {
+
+            //     a[i]= Math.floor(Math.random() * 37 + 1)
+            // }
+
+            while(a.length<7){
+                let num = Math.floor(Math.random() * 37 + 1)
+
+                if(!a.includes(num)){
+                    a.push(num)
+                }
+
+            }
+
+
+
+                
+           let b = Math.floor(Math.random()*7+1)
+            
+            return `A區數字[${a}]，B區數字${b}`
+        }
+
+        document.write(lotto())
+    </script>
+</body>
+
+</html>
